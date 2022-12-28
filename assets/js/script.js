@@ -32,7 +32,7 @@ function hoursObject() {
 // Calls function
 hoursObject()
 
-// Display
+// HTML Display
 function displayHours() {
   for (let hour in hours) {
     let li = $('<li></li>').addClass('block');
@@ -87,3 +87,5 @@ function displayHours() {
   let momentHour = moment().format('H')
   colorCoordinate(momentHour)
 }
+// Calls function
+displayHours()
