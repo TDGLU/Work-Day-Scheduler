@@ -1,5 +1,4 @@
 :root {
-  --lightC: rgb(255, 255, 255);
   --drkC: rgb(37, 37, 37);
   --blueC: rgb(34, 111, 255);
   
@@ -60,7 +59,7 @@ textarea {
 }
 
 .blockTime {
-  color: var(--blue-clr);
+  color: var(--blueC);
   width: 15vw;
   padding: 0.6rem 0;
   height: 50%;
@@ -78,7 +77,7 @@ textarea {
 .blockSave {
   outline: none;
   color: white;
-  background-color: var(--blue-clr);
+  background-color: var(--blueC);
   border: 1px solid white;
   border-radius: 0 10px 10px 0;
   width: 15vw;
