@@ -10,17 +10,14 @@ This gives users a daily planner that they could add events to so they can manag
 - [Tests](#tests)
 - [Questions](#questions)
 
+## Screenshot
+<img src="./assets/imgs/screenshot.png">
+
 ## Install
 They could clone it through the GitHub repository
 
 ## Usage
 They could add events to their work planner
-
-## Contributions
-N/A
-
-## Tests
-N/A
 
 ## Questions
 Contact me at:
