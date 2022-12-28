@@ -29,10 +29,18 @@ textarea {
 .jumbotron {
   text-align: center;
 	background-color: transparent;
-	color: var(--lightC);
+	color: white;
 	border-radius: 0;
 	border-bottom: 2px solid rgb(255, 255, 255);
 	padding: 2rem 1rem;
+}
+
+.info {
+  color: rgb(255, 255, 255);
+  padding: 0.8rem 2rem;
+  text-align: center;
+  font-size: 1.1rem;
+  line-height: 2rem;
 }
 
 .container {
