@@ -90,6 +90,26 @@ function displayHours() {
 // Calls function
 displayHours()
 
+// Different color for different hour
+function colorCoordinate(momentHour) {
+  let blocks = $('.block')
+  let blocksNum = $('.block').length;
+  let num = [9, 10, 11, 12, 13, 14, 15, 16, 17, 18]
+  for (i = 0; i < blocksNum; i++) {
+    $(blocks[i]).attr('data-time', num[i])
+  }
+  for (i = 0; i < blocksNum; i++) {
+    let blockData = $(blocks[i]).data().time;
+    if (blockData == momentHour) {
+      $(blocks[i]).css("background-color", "var(--presentC)")
+    } else if (blockData > momentHour) {
+      $(blocks[i]).css("background-color", "var(--futureC)")
+    } else {
+      $(blocks[i]).css("background-color", "var(--greyC)")
+    }
+  }
+}
+
 // Saves time and message
 function saveBlocks(time, msg) {
   for (let hour in hours) {
