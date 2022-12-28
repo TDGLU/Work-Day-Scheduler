@@ -32,8 +32,7 @@ function hoursObject() {
 // Calls function
 hoursObject()
 
-
-// HTML Display
+// Display
 function displayHours() {
   for (let hour in hours) {
     let li = $('<li></li>').addClass('block');
@@ -87,27 +86,4 @@ function displayHours() {
   }))
   let momentHour = moment().format('H')
   colorCoordinate(momentHour)
-}
-// Calls function
-displayHours()
-
-// Saves time and message
-function saveBlocks(time, msg) {
-  for (let hour in hours) {
-    if (hour === time) {
-      hours[time] = msg
-    }
-  }
-  localStorage.setItem('hours', JSON.stringify(hours))
-}
-
-// Clear button calls clearblocks function 
-clear.on('click', clearBlocks)
-
-// Clears local storage
-function clearBlocks() {
-  localStorage.clear()
-  setTimeout(() => {
-    location.reload()
-  }, 300)
 }
