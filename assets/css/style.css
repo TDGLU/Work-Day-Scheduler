@@ -92,3 +92,22 @@ textarea {
   background-color: rgb(27, 164, 255);
   outline: none;
 }
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 0 5.5rem 0;
+}
+
+#clearBtn {
+  padding: 1rem;
+  color: white;
+  background: rgb(255, 110, 110);
+  border: 1px solid white;
+  border-radius: 10px;
+}
+
+#clearBtn:hover {
+  background-color: rgb(255, 42, 42);
+}
