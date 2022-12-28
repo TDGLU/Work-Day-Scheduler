@@ -6,3 +6,5 @@ let container = $('.container')
 let clear = $('#clearBtn')
 let today = moment().format('dddd, [ ]MMMM, Do')
 $(currentDay).text(today)
+
+let 
