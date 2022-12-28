@@ -89,3 +89,24 @@ function displayHours() {
 }
 // Calls function
 displayHours()
+
+// Saves time and message
+function saveBlocks(time, msg) {
+  for (let hour in hours) {
+    if (hour === time) {
+      hours[time] = msg
+    }
+  }
+  localStorage.setItem('hours', JSON.stringify(hours))
+}
+
+// Clear button calls clearblocks function 
+clear.on('click', clearBlocks)
+
+// Clears local storage
+function clearBlocks() {
+  localStorage.clear()
+  setTimeout(() => {
+    location.reload()
+  }, 300)
+}
